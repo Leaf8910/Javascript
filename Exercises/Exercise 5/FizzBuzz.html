@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function add7(num) {
+        return num + 7;
+    }
+    console.log(add7(3)); 
+    
+    function multiply(num1, num2) {
+        return num1 * num2;
+    }
+    console.log(multiply(3, 3));
+
+    function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+    console.log(capitalize('hello')); 
+    
+    let answer = parseInt(prompt("Please enter the number you would like FizzBuzz stop at:"));
+
+    for (let i = 1 , i <= answer, i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        else if (i % 5 === 0)  // else if is used to check if the first condition is not met
+            console.log("Buzz");
+        else if (i % 3 === 0)
+            console.log("Fizz");
+        else
+            console.log(i);
+
+    }
+
+    // function lastLetter() {
+    //     return str.charAt(str.length - 1);
+    // }
+    // console.log(lastLetter('hello')); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
