@@ -6,25 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="myscript.css">
-    <script src="myscript.js" defer></script>
 </head>
 <body>
-    <div class="selections">
-        <button class="selection" data-selection="rock">✊</button>
-        <button class="selection" data-selection="scissors">✌️</button>
-        <button class="selection" data-selection="paper">✋</button>
-    </div>
-    <div class="results">
-        <div>
-            You
-            <span class="result-score" data-your-score>0</span>
+    <h1>Rock Paper Scissors</h1>
+    <div class="game-wrapper">
+        <div class="player-container">
+            <h2 class="player-label">You</h2>
+            <div class="user-container">
+                <div class="user-profile">
+                    <div class="player-type">
+                        <img src="images/user.png" alt="rock" height="30px">
+                    </div>
+                    <div>
+                        <h2 class="user-score">0</h2>
+                    </div>
+                </div>
+                <div class="user-buttons">
+                    <div class="rock-button" data-button="rock">
+                        <img src="images/rock.png" alt="rock" height="30px">
+                        <h3>Rock</h3>
+                    </div>
+                    <div class="paper button" data-button="paper">
+                        <img src="images/paper.jpg" alt="paper" height="30px">
+                        <h3>Paper</h3 class="selection">  
+                    </div>
+                    <div class="scissors button" data-button="scissors">
+                        <img src="images/scissor.png" alt="scissors" height="30px">
+                        <h3>Scissors</h3 class="selection">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div data-final-column>
-            Computer
-            <span class="result-score" data-computer-score>0</span>
-        </div>
-        <div class="result-selection-winner">✊</div>
-        <div class="result-selection">✌️</div>
     </div>
+    <div class="player-container">
+        <h2 class="computer-label">CPU</h2>
+        <div class="computer-container">
+            <div class="player-type">
+                <img src="images/server.jpg" height="30px">
+            </div>
+            <div>
+                <h3>Score</h3>
+                <h2 class="computer-score">0</h2>
+            </div>
+        </div>
+        <div class="computer-buttons">
+            <div class="button computer-rock">
+                <img src="images/rock.png" alt="rock" height="30px">
+                <h3>Rock</h3>
+            </div>
+            <div class="button computer-paper">
+                <img src="images/paper.jpg" alt="paper" height="30px">
+                <h3>Paper</h3>
+            </div>
+            <div class="button computer-scissors">
+                <img src="images/scissor.png" alt="scissors" height="30px">
+                <h3>Scissors</h3>   
+        </div>
+    </div>
+
+    <script src="myscript1.js"></script>
 </body>
 </html>
